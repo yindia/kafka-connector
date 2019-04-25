@@ -1,7 +1,6 @@
-Note :- not ready for production 
-This package simplifies loading kafka events into mysql compliant databases. You can use it as a standalone cli tool or as a package within your application.
+![](https://i.imgur.com/pDNDazK.png)
 
-## CLI
+## Get started
 ```
 ./kafka-connector --brokers=127.0.0.1:9092,127.0.0.2:9092 --group=test-consumer --topics=topic_a --fields=field_a,field_b --mysql-database=test --mysql-table=test_data
 ```
@@ -23,3 +22,6 @@ This package simplifies loading kafka events into mysql compliant databases. You
 - **- -fetch-size** Kafka consumer default fetch size (bytes), default: `1MB`
 - **- -connection-timeout** Kafka connection timeout (seconds), default: `1s`
 - **- -max-retries** Number of retries if query goes wrong, default: `3`
+
+
+Note :- not ready for production
