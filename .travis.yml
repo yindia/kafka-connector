@@ -1,0 +1,18 @@
+language: go
+
+go:
+  - 1.6
+  - 1.7
+  - master
+
+services:
+  - docker
+
+before_script:
+  - sudo /etc/init.d/mysql stop
+  - docker-compose pull
+  - docker-compose up -d
+
+script:
+  - go get -t -d -v ./...
+  - make test
