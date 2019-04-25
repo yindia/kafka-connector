@@ -1,0 +1,6 @@
+checkoutLocation: "go/src/github.com/evalsocket/kafka-connector"
+workspaceLocation: "."
+tasks:
+  - command: >
+      cd /workspace/go/src/github.com/evalsocket/kafka-connector &&
+      go get -v ./...
