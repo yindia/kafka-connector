@@ -1,3 +1,4 @@
+Note :- not ready for production 
 This package simplifies loading kafka events into mysql compliant databases. You can use it as a standalone cli tool or as a package within your application.
 
 ## CLI
